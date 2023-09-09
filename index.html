@@ -38,12 +38,12 @@
   </head>
   <body>
     <!-- 로딩페이지 -->
-    <div class="loader">
+    <!-- <div class="loader">
       <div class="loaderIn">
         <h1>0%</h1>
         <div class="line"></div>
       </div>
-    </div>
+    </div> -->
 
     <div class="scroll">0</div>
 
@@ -155,14 +155,14 @@
                 프론트엔드 개발자 <strong class="name">조서은</strong>입니다.
               </p>
               <p class="greeting greet2">
-                <strong>배움은 끝이 없다!</strong><br />
-                부산에서 6개월간의 웹퍼블리셔 <br />
-                과정을 수료하고, 서울에 올라와 <br />
-                <strong>JavaScript, React, Vue, Php</strong> 등 <br />
-                다양한 언어들을 배우고 익혔습니다.
+                <strong>JavaScript, Vue.js</strong>로<br />
+                1년 3개월간 골프 플랫폼 회사에서<br />
+                웹앱서비스 신규개발에 참여했으며<br />
+                <strong>다양한 직군과 소통</strong>하여 <br />
+                서비스를 운영 및 오픈해 본 경험이 있습니다.
               </p>
               <p class="greeting greet3">
-                코딩을 배우면서 <strong>정성껏</strong> 제작한 작업물을<br />
+                코딩을 학습하며 <strong>정성껏</strong> 제작한 작업물을<br />
                 담았습니다. 제 포트폴리오를 보면서 <br />
                 잠시나마 <strong>즐거운 시간</strong>이었으면 좋겠습니다.
               </p>
@@ -1389,7 +1389,7 @@
                   <img src="assets/img/ico_github.png" alt="github" />
                 </a>
                 <a
-                  href="https://swamp-output-555.notion.site/Notion-List-379a790a01f04c338668b333dc539bcc"
+                  href="https://enchanting-drip-66d.notion.site/661e000688d04abf94686ae02d8983ff?pvs=4"
                   target="_blank"
                   class="notion"
                 >
@@ -1413,65 +1413,65 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
     ></script>
     <script>
-      // 로딩화면
-      const loader = document.querySelector(".loader");
-      const html = document.querySelector("html");
+      // // 로딩화면
+      // const loader = document.querySelector(".loader");
+      // const html = document.querySelector("html");
 
-      html.style.overflow = "hidden"; //로딩 중 스크롤 방지
+      // html.style.overflow = "hidden"; //로딩 중 스크롤 방지
 
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          //로딩속도 구현
-          loader.style.opacity = "0";
-          html.style.overflow = "auto"; //스크롤 방지 해제
+      // window.addEventListener("load", () => {
+      //   setTimeout(() => {
+      //     //로딩속도 구현
+      //     loader.style.opacity = "0";
+      //     html.style.overflow = "auto"; //스크롤 방지 해제
 
-          setTimeout(() => {
-            loader.style.display = "none";
-          }, 400);
-        }, 3000);
-      });
-      // 로딩 카운트
-      var counter = 0;
-      var c = 0;
-      var i = setInterval(function () {
-        $(".loader h1").html(c + "%");
+      //     setTimeout(() => {
+      //       loader.style.display = "none";
+      //     }, 400);
+      //   }, 3000);
+      // });
+      // // 로딩 카운트
+      // var counter = 0;
+      // var c = 0;
+      // var i = setInterval(function () {
+      //   $(".loader h1").html(c + "%");
 
-        counter++;
-        c++;
+      //   counter++;
+      //   c++;
 
-        if (counter == 101) {
-          clearInterval(i);
-        }
-      }, 30);
+      //   if (counter == 101) {
+      //     clearInterval(i);
+      //   }
+      // }, 30);
 
-      // 스크롤
-      $(document).ready(function () {
-        var s = skrollr.init();
+      // // 스크롤
+      // $(document).ready(function () {
+      //   var s = skrollr.init();
 
-        window.addEventListener("scroll", function () {
-          let scroll =
-            document.documentElement.scrollTop ||
-            window.scrollY ||
-            window.pageYOffset;
-          document.querySelector(".scroll").innerText = parseInt(scroll);
-        });
-      });
+      //   window.addEventListener("scroll", function () {
+      //     let scroll =
+      //       document.documentElement.scrollTop ||
+      //       window.scrollY ||
+      //       window.pageYOffset;
+      //     document.querySelector(".scroll").innerText = parseInt(scroll);
+      //   });
+      // });
 
-      // 모바일 메뉴
-      $("#toggle").click(function () {
-        $("#toggle .bar").toggleClass("animate");
-        $("#navM").toggleClass("overlay");
-      });
+      // // 모바일 메뉴
+      // $("#toggle").click(function () {
+      //   $("#toggle .bar").toggleClass("animate");
+      //   $("#navM").toggleClass("overlay");
+      // });
 
-      // 섹션 이동
-      document.querySelectorAll(".nav ul li a").forEach((li) => {
-        li.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector(li.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
+      // // 섹션 이동
+      // document.querySelectorAll(".nav ul li a").forEach((li) => {
+      //   li.addEventListener("click", (e) => {
+      //     e.preventDefault();
+      //     document.querySelector(li.getAttribute("href")).scrollIntoView({
+      //       behavior: "smooth",
+      //     });
+      //   });
+      // });
     </script>
   </body>
 </html>
