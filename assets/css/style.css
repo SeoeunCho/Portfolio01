@@ -2723,7 +2723,7 @@ section {
     top: 36vw;
   }
   .stairs .greet3 {
-    padding-top: 10%;
+    padding-top: 18%;
     padding-bottom: 48vw;
     padding-left: 0vw;
   }
@@ -2732,12 +2732,12 @@ section {
     width: 8vw;
     height: 500px;
     background-size: 7vw;
-    top: 1vw;
+    top: 4vw;
     left: -3vw;
   }
   @keyframes bird {
     50% {
-      top: 0vw;
+      top: 3vw;
     }
   }
   /* sec2 about, skills*/
